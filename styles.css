@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #000;
+}
+
+body{
+    width: 485px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.brand{
+    padding: 25px;
+    color: #007d7b;
+    text-align: center;
+    text-transform: uppercase;
+}
+nav{
+    text-align: center;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav li {
+  width: 80px;
+}
+nav a{
+    text-decoration: none;
+    text-align: center;
+    width: 80px;
+    padding: 20px;
+}
