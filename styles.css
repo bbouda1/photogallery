@@ -58,12 +58,13 @@ h2, h3{
     text-transform: uppercase;
     font-weight: bold;
 }
-h3{
+.hidden{
     visibility: hidden;
 }
 #about{
     margin: 15px;
 }
+
 #about p{
     color: #000;
     font-weight: 700;
@@ -276,6 +277,11 @@ footer p{
     grid-template-columns: repeat(2, 1fr);
 }
 
+#gallery h2, #about h2{
+    font-size: 2.3rem;
+    font-weight: bolder;
+}
+
 input[type="submit"]{
     width: 50%;
 }
@@ -289,6 +295,9 @@ a[href="#top"]{
     height: 50%;
 }
 }
+
+
+
 @media only screen and (min-width: 1300px){
     body{
         width: 1300px;
