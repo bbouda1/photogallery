@@ -1,22 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Photo Gallery</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <h2 class="brand">TK Photography</h2>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#top">Top</a></li>
-                </ul>
-            </nav>
-        </header>
-    </body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="brand">TK Photography</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#top">Top</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>Holla!</p><br>
+        <p>
+          I’m TK and I’m a photographer. I love looking at life through the lens
+          of my camera. Landscape photography is my speciality and it’s taken me
+          all over the world.
+        </p>
+      </section>
+      <section id="gallery">
+        <h2>Gallery</h2>
+        <p>
+          Here are some highlights of my work. The locations and year are in the
+          caption.
+        </p>
+        <div id="grid-wrap">
+          <div class="item item-1">
+            <img src="img/Chile.png" alt="">
+            <p>Chile, 2001</p>
+          </div>
+          <div class="item item-2">
+            <img src="img/Guatemala.png" alt="">
+            <p>Guatemal, 1997</p>
+          </div>
+          <div class="item item-3">
+            <img src="img/Hawaii.png " alt="">
+            <p>Hawaii, 2010</p>
+          </div>
+          <div class="item item-4">
+            <img src="img/Iran.png" alt="">
+            <p>Iran, 1999</p>
+          </div>
+          <div class="item item-5">
+            <img src="img/Ireland.png" alt="">
+            <p>Ireland, 2012</p>
+          </div>
+          <div class="item item-6">
+            <img src="img/Italy.png" alt="">
+            <p>Italy, 2015</p>
+          </div>
+          <div class="item item-7">
+            <img src="img/Moab-Desert.png " alt="">
+            <p>Moab Desert, 2020</p>
+          </div>
+          <div class="item item-8">
+            <img src="img/Rocky-Mountains.png " alt="">
+            <p>Rocky-Mountains, 2009</p>
+          </div>
+          <div class="item item-9">
+            <img src="img/Switzerland.png " alt="">
+            <p>Switzerland, 2014</p>
+          </div>
+          <div class="item item-10">
+            <img src="img/UK.png " alt="">
+            <p>UK, 2005</p>
+          </div>
+          <div class="item item-11">
+            <img src="img/USA.png " alt="">
+            <p>USA, 2021</p>
+          </div>
+          <div class="item item-12">
+            <img src="img/Wyoming.png" alt="">
+            <p>Wyoming, 2021</p>
+          </div>
+        </div>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Please fill out this form and I’ll connect with you soon.</p>
+        </section>
+        <form>
+            <h3> Your contact information</h3>
+            <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your full name">
+            </div>
+            <div class="form-field">
+                <label for="name">Email</label>
+                <input type="text" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-field">
+                <label for="message">Message</label>
+                <input type="text" id="message" placeholder="What can I help you with?">
+            </div>
+            <div class="btn-container">
+                <input type="submit">
+            </div>
+        </form>
+     
+        <footer>
+            <p>Copyright 2021 TK Photography</p>
+        </footer>
+      </section>
+    </main>
+  </body>
 </html>

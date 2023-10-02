@@ -6,35 +6,330 @@
 
 html{
     background-color: #000;
+    position: relative;
 }
 
 body{
     width: 485px;
     margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #fff;
 }
 
+
 .brand{
-    padding: 25px;
     color: #007d7b;
     text-align: center;
+    padding: 10px;
     text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
-nav{
-    text-align: center;
-}
+
 nav ul{
+    width: 100%;
+    height: 4vh;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
     list-style: none;
 }
 
-nav li {
-  width: 80px;
-}
-nav a{
+nav li a{
+    padding: 10px 25px;
     text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
     text-align: center;
-    width: 80px;
-    padding: 20px;
+    font-weight: bold;
+}
+
+a[href="#top"]{
+    position: absolute;
+    bottom: 0;
+    right: -60px;
+    border: 3px solid #fff;
+}
+
+h2, h3{
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+h3{
+    visibility: hidden;
+}
+#about{
+    margin: 15px;
+}
+#about p{
+    color: #000;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#gallery>h2, #gallery>p{
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 15px;
+}
+#grid-wrap{
+    text-align: center;
+    margin: 10px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#grid-wrap > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+#grid-wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#grid-wrap{
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.item, .item p{
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.item-1 p{
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+.item-2 p{
+    position: absolute;
+    top: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+.item-3 p{
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+.item-4 p{
+    position: absolute;
+    top: 10px;
+    color: #000;
+    font-weight: bold;
+}
+.item-5 p{
+    position: absolute;
+    top: 10px;
+    color: #000;
+    font-weight: bold;
+}
+.item-6 p{
+    position: absolute;
+    bottom: 10px;
+    color: #000;
+    font-weight: bold;
+}
+.item-7 p{
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+.item-8 p{
+    position: absolute;
+    top: 10px;
+    color: #000;
+    font-weight: bold;
+}
+.item-9 p{
+    position: absolute;
+    top: 10px;
+    color: #000;
+    font-weight: bold;
+}
+.item-10 p{
+    position: absolute;
+    top: 10px;
+    color: #000;
+    font-weight: bold;
+}
+.item-11 p{
+    position: absolute;
+    top: 10px;
+    color: #000;
+    font-weight: bold;
+}
+.item-12 p{
+    position: absolute;
+    top: 10px;
+    color: #fff;
+}
+
+#contact{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+#contact p{
+    font-size: 1.3rem;
+    padding-top: 20px;
+}
+
+form{
+    background-color: #000;
+    color: #fff;
+}
+
+form h2{
+    visibility: hidden;
+}
+
+form .form-field{
+display: flex;
+flex-direction: column;
+margin: 0 20px;
+margin-bottom: 20px;
+}
+
+label{
+   font-weight: bold;
+   margin:0 10px 3px;
+   text-transform: uppercase;
+}
+
+.form-field input{
+width: 100%;
+height: 40px;
+padding: 5px;
+}
+
+::-webkit-input-placeholder{
+    color: #007d7b;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+
+.btn-container{
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+}
+
+input[type="submit"]{
+    width: 40%;
+    background-color: #007d7b;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+footer p{
+    background-color: #000;
+    text-align: center;
+    padding: 50px 0 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+@media only screen and (min-width: 880px){
+    body{
+        width: 880px;
+        overflow-x: hidden;
+    }
+     .brand{
+        float: left;
+    }
+    nav ul{
+        font-size: 1.2rem;
+    }
+
+    #grid-wrap{
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+input[type="submit"]{
+    width: 50%;
+}
+a[href="#top"]{
+    position: absolute;
+    bottom: 0;
+    right: -100px;
+    border: 3px solid #fff;
+}
+.item-3{
+    height: 50%;
+}
+}
+@media only screen and (min-width: 1300px){
+    body{
+        width: 1300px;
+        overflow-x: hidden;
+    }
+
+    .brand{
+        float: left;
+    }
+
+    nav ul{
+        font-size: 1.3rem;
+    justify-content: flex-end;
+}
+
+    #grid-wrap{
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+input[type="submit"]{
+    width: 60%;
+    padding: 12px;
+    font-size: 1.2rem;
+}
+.form-field input{
+width: 100%;
+height: 50px;
+padding: 7px;
+}
+a[href="#top"]{
+    position: absolute;
+    bottom: 0;
+    right: -100px;
+    border: 3px solid #fff;
+}
+#about h2, #gallery h2{
+    font-size: 2.3rem;
+}
+.item-3{
+    height: 50%;
+}
 }
